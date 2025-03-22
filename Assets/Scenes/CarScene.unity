@@ -187,17 +187,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -231,8 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 24296194}
-  - component: {fileID: 24296195}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: TrackModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,28 +252,6 @@ Transform:
   - {fileID: 2029534558}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &24296195
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24296193}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1001 &25949199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -343,17 +312,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -441,17 +402,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -530,14 +483,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: rail (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3105817304276991423, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -611,17 +556,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -694,14 +631,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
       propertyPath: m_Name
       value: barrierWall
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3340187787267790167, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -776,17 +705,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -865,14 +786,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLargeSandInner (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: cb7029bdc3d434173953caab588e97c9, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1414041331096650521, guid: cb7029bdc3d434173953caab588e97c9, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -950,14 +863,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraight (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1029,14 +934,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1178,14 +1075,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1262,14 +1151,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
       propertyPath: m_Name
       value: roadStraight (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1352,17 +1233,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1455,14 +1328,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraightArrow
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 735e0b6e4733549688b3d97b16ba447d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172096062930954641, guid: 735e0b6e4733549688b3d97b16ba447d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1544,17 +1409,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (33)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1579,7 +1436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 149664035}
   - component: {fileID: 149664036}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LightPosts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1692,17 +1549,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (46)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1809,17 +1658,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1897,14 +1738,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
       propertyPath: m_Name
       value: rail (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3105817304276991423, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1999,14 +1832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerSmallBorder (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f25c69380d7184e4c811a96f35b39391, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1745945655714743843, guid: f25c69380d7184e4c811a96f35b39391, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2088,17 +1913,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (35)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2118,145 +1935,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
   m_PrefabInstance: {fileID: 2092233630}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &198870463
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 198870466}
-  - component: {fileID: 198870465}
-  - component: {fileID: 198870464}
-  m_Layer: 0
-  m_Name: Car
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &198870464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198870463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdde89301dff54155b4a5de8afadfb0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carRB: {fileID: 198870465}
-  rayPoints:
-  - {fileID: 830293841}
-  - {fileID: 1859506249}
-  - {fileID: 1892337142}
-  - {fileID: 257514389}
-  drivable:
-    serializedVersion: 2
-    m_Bits: 64
-  accelerationPoint: {fileID: 284183829}
-  springStiffness: 30000
-  damperStiffness: 4000
-  restLength: 0.5
-  springTravel: 0.25
-  wheelRadius: 0.33
-  acceleration: 25
-  maxSpeed: 100
-  deceleration: 10
-  steerStrength: 30
-  turningCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.558779
-      value: 0.9311308
-      inSlope: 0.09134509
-      outSlope: 0.09134509
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.80948
-      value: 0.8658561
-      inSlope: -0.3533647
-      outSlope: -0.3533647
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1.0166626
-      value: 0.81132126
-      inSlope: -0.754721
-      outSlope: -0.754721
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.6147526
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 0
-    m_RotationOrder: 4
-  dragCoefficient: 1
-  carVelocityRatio: 0
---- !u!54 &198870465
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198870463}
-  serializedVersion: 4
-  m_Mass: 1000
-  m_Drag: 0.2
-  m_AngularDrag: 10
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!4 &198870466
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198870463}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.3, y: 3.49, z: 25.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 330585546}
-  - {fileID: 852684769}
-  - {fileID: 1950166801}
-  - {fileID: 284183829}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &204519027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2325,17 +2003,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2410,17 +2080,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2493,14 +2155,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2612,14 +2266,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerSmallBorder (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f25c69380d7184e4c811a96f35b39391, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1745945655714743843, guid: f25c69380d7184e4c811a96f35b39391, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2716,17 +2362,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.28
       objectReference: {fileID: 0}
-    - target: {fileID: 594605275287064231, guid: 52739cd6674054db580f7a15bbb64268, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 52739cd6674054db580f7a15bbb64268, type: 3}
       propertyPath: m_Name
       value: lightPostLarge
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 52739cd6674054db580f7a15bbb64268, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2818,17 +2456,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2919,17 +2549,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.07618
       objectReference: {fileID: 0}
-    - target: {fileID: -420837809347544627, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
       propertyPath: m_Name
       value: roadCornerLargerBorder (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3012,17 +2634,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3105,17 +2719,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3190,17 +2796,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (27)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3288,17 +2886,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (55)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3313,37 +2903,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
   m_PrefabInstance: {fileID: 254074398}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &257514388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 257514389}
-  m_Layer: 0
-  m_Name: BR
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &257514389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257514388}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.08, y: 0, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1950166801}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &260295249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
@@ -3452,17 +3011,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.07618
       objectReference: {fileID: 0}
-    - target: {fileID: -420837809347544627, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
       propertyPath: m_Name
       value: roadCornerLargerBorder (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3487,37 +3038,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
   m_PrefabInstance: {fileID: 337672322}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &284183828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 284183829}
-  m_Layer: 0
-  m_Name: Acceleration Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &284183829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284183828}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.45, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 198870466}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &296287766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3578,17 +3098,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3639,7 +3151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 316674540}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rails&Barriers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3754,17 +3266,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3865,12 +3369,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.92, z: -14}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 198870466}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -3989,17 +3493,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (39)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4128,17 +3624,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7253734038166283401, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
       propertyPath: m_Name
       value: roadEnd
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4202,7 +3690,7 @@ GameObject:
   - component: {fileID: 359149336}
   - component: {fileID: 359149335}
   - component: {fileID: 359149334}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4436,14 +3924,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraight (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4544,17 +4024,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4627,14 +4099,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
       propertyPath: m_Name
       value: ramp
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8714700346447161238, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4857,17 +4321,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4968,14 +4424,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ramp
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8714700346447161238, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5058,14 +4506,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.01
@@ -5095,7 +4535,7 @@ GameObject:
   - component: {fileID: 455225164}
   - component: {fileID: 455225163}
   - component: {fileID: 455225162}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5251,17 +4691,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5331,17 +4763,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5363,7 +4787,7 @@ GameObject:
   - component: {fileID: 473017788}
   - component: {fileID: 473017787}
   - component: {fileID: 473017786}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5527,17 +4951,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5634,17 +5050,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5727,17 +5135,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (38)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5812,17 +5212,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5928,14 +5320,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraight (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5967,7 +5351,7 @@ GameObject:
   - component: {fileID: 503875725}
   - component: {fileID: 503875724}
   - component: {fileID: 503875728}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6185,17 +5569,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (54)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6310,17 +5686,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (36)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6438,17 +5806,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.30895
       objectReference: {fileID: 0}
-    - target: {fileID: -420837809347544627, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
       propertyPath: m_Name
       value: roadCornerLargerBorder (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6474,7 +5834,7 @@ GameObject:
   - component: {fileID: 545902734}
   - component: {fileID: 545902736}
   - component: {fileID: 545902735}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: roadStraightBridge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6620,17 +5980,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6735,14 +6087,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6866,10 +6210,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraightLong (44)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
@@ -6915,7 +6255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 568792035}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Road&Curbs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7141,17 +6481,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7229,17 +6561,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7290,7 +6614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595841749}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Supports
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7390,14 +6714,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7471,17 +6787,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7253734038166283401, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
       propertyPath: m_Name
       value: roadEnd (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7565,14 +6873,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarger
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2dcd20088b7ca4a7bbb7538294cb59fc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3717917982050418172, guid: 2dcd20088b7ca4a7bbb7538294cb59fc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7646,17 +6946,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7739,17 +7031,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7824,17 +7108,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8095,14 +7371,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrierWall (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3340187787267790167, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8180,14 +7448,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: rail (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3105817304276991423, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8264,14 +7524,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
       propertyPath: m_Name
       value: roadStraight (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8378,17 +7630,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3914691874080345917, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
       propertyPath: m_Name
       value: roadRampLongCurved
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8471,17 +7715,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (49)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8606,17 +7842,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (56)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8721,17 +7949,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8841,17 +8061,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (58)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8956,17 +8168,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (50)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9046,17 +8250,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9134,17 +8330,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (28)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9227,17 +8415,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (47)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9347,17 +8527,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (30)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9481,17 +8653,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3795886565146415156, guid: e889a0a5fb03147eebf5c90cc8dc47d7, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e889a0a5fb03147eebf5c90cc8dc47d7, type: 3}
       propertyPath: m_Name
       value: barrierRed (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e889a0a5fb03147eebf5c90cc8dc47d7, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9596,17 +8760,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (57)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9689,14 +8845,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraightArrow (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 735e0b6e4733549688b3d97b16ba447d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172096062930954641, guid: 735e0b6e4733549688b3d97b16ba447d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9770,17 +8918,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9850,17 +8990,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9935,17 +9067,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7293119210707948081, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
       propertyPath: m_Name
       value: roadRampWall (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10028,17 +9152,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (52)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10134,37 +9250,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &830293840
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 830293841}
-  m_Layer: 0
-  m_Name: FL
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &830293841
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830293840}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.97, y: 0, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1950166801}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -10278,14 +9363,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: tentRoofDouble
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 3e1135e74250140759b2515a15940230, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 981162278991465639, guid: 3e1135e74250140759b2515a15940230, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10364,17 +9441,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10475,14 +9544,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.072
@@ -10553,11 +9614,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!4 &852684769 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 1128182291}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &860910624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
@@ -10650,17 +9706,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10738,17 +9786,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (53)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10845,17 +9885,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7253734038166283401, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
       propertyPath: m_Name
       value: roadEnd
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 47c6cea63f30e427bb8307068f38eea1, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10992,17 +10024,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7293119210707948081, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
       propertyPath: m_Name
       value: roadRampWall
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11164,17 +10188,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11328,17 +10344,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 249657478231984232, guid: 2493fd828fa7d4c878036aa385604ea7, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2493fd828fa7d4c878036aa385604ea7, type: 3}
       propertyPath: m_Name
       value: roadSplitSmall
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2493fd828fa7d4c878036aa385604ea7, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11392,7 +10400,7 @@ GameObject:
   - component: {fileID: 940937696}
   - component: {fileID: 940937695}
   - component: {fileID: 940937694}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11553,17 +10561,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11665,17 +10665,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11723,7 +10715,7 @@ GameObject:
   - component: {fileID: 960582751}
   - component: {fileID: 960582753}
   - component: {fileID: 960582752}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: lightPostLarge (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11873,17 +10865,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12025,14 +11009,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cb7029bdc3d434173953caab588e97c9, type: 3}
       propertyPath: m_Name
       value: roadCornerLargeSandInner
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: cb7029bdc3d434173953caab588e97c9, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1414041331096650521, guid: cb7029bdc3d434173953caab588e97c9, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12188,17 +11164,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3914691874080345917, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
       propertyPath: m_Name
       value: roadRampLongCurved (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12303,17 +11271,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (60)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12391,14 +11351,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
       propertyPath: m_Name
       value: roadStraight (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12498,14 +11450,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
       propertyPath: m_Name
       value: barrierWall (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3340187787267790167, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8040918274471732475, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12636,17 +11580,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (25)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12724,17 +11660,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12817,17 +11745,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12910,17 +11830,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (42)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13049,17 +11961,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3914691874080345917, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
       propertyPath: m_Name
       value: roadRampLongCurved (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13159,14 +12063,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
       propertyPath: m_Name
       value: roadStraight (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13340,17 +12236,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13466,14 +12354,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraight
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13482,74 +12362,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2116915453}
   m_SourcePrefab: {fileID: 100100000, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
---- !u!1001 &1128182291
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 198870466}
-    m_Modifications:
-    - target: {fileID: 627556911, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_Name
-      value: Prometheus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2847525949359012301, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 975b4d94cd15da34d833f64957a8479a, type: 2}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 5135156708204615449, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    - {fileID: 627556911, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
 --- !u!1001 &1134529754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13618,17 +12430,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13728,14 +12532,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 240fe64c9d5c644d8b8d1519093eea27, type: 3}
       propertyPath: m_Name
       value: roadCornerSmallSquare (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 240fe64c9d5c644d8b8d1519093eea27, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1480020567553271667, guid: 240fe64c9d5c644d8b8d1519093eea27, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13874,17 +12670,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13986,17 +12774,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4018172734392093955, guid: 6bf356b0a428d4f11b4edd410c0cb5a2, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bf356b0a428d4f11b4edd410c0cb5a2, type: 3}
       propertyPath: m_Name
       value: roadRampLong
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 6bf356b0a428d4f11b4edd410c0cb5a2, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14079,17 +12859,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14189,14 +12961,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14343,14 +13107,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14424,17 +13180,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3914691874080345917, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
       propertyPath: m_Name
       value: roadRampLongCurved (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7130502115038940973, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14547,17 +13295,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (37)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14713,10 +13453,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5156936075548718150, guid: 74dcfb4a50d4b492fb1fcee55df1b155, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: -131767891224798698, guid: 74dcfb4a50d4b492fb1fcee55df1b155, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.007
@@ -14728,10 +13464,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 74dcfb4a50d4b492fb1fcee55df1b155, type: 3}
       propertyPath: m_Name
       value: roadStraightLongBump
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 74dcfb4a50d4b492fb1fcee55df1b155, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14809,14 +13541,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bd4243db57ca64ae88ec3edb5bd8d5af, type: 3}
       propertyPath: m_Name
       value: roadSplit
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: bd4243db57ca64ae88ec3edb5bd8d5af, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2815800960389909289, guid: bd4243db57ca64ae88ec3edb5bd8d5af, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14925,17 +13649,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5854048258369390603, guid: 3a582453bfd60488088b91f69a8ab422, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3a582453bfd60488088b91f69a8ab422, type: 3}
       propertyPath: m_Name
       value: tent
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 3a582453bfd60488088b91f69a8ab422, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15020,17 +13736,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15103,14 +13811,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15210,17 +13910,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (25)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15365,17 +14057,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.07618
       objectReference: {fileID: 0}
-    - target: {fileID: -420837809347544627, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
       propertyPath: m_Name
       value: roadCornerLargerBorder (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15519,14 +14203,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerSmallBorder
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f25c69380d7184e4c811a96f35b39391, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1745945655714743843, guid: f25c69380d7184e4c811a96f35b39391, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15630,17 +14306,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15774,17 +14442,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 550502399016123467, guid: 351d6b5685b2b438db422a94ca7fde30, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 351d6b5685b2b438db422a94ca7fde30, type: 3}
       propertyPath: m_Name
       value: roadSplitRound
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 351d6b5685b2b438db422a94ca7fde30, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15889,14 +14549,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStart
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 919f0e9ca95204ec1b463dcbfa8f2483, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165546931770373757, guid: 919f0e9ca95204ec1b463dcbfa8f2483, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15914,7 +14566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1348467793}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16006,17 +14658,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16177,17 +14821,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16257,17 +14893,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3795886565146415156, guid: e889a0a5fb03147eebf5c90cc8dc47d7, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e889a0a5fb03147eebf5c90cc8dc47d7, type: 3}
       propertyPath: m_Name
       value: barrierRed
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e889a0a5fb03147eebf5c90cc8dc47d7, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16372,17 +15000,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (51)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16428,7 +15048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427364447}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Pylons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16530,17 +15150,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16640,14 +15252,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
       propertyPath: m_Name
       value: roadStraight (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16779,17 +15383,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (48)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16940,17 +15536,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3914691874080345917, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
       propertyPath: m_Name
       value: roadRampLongCurved (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17033,17 +15621,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (59)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17194,17 +15774,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7293119210707948081, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
       propertyPath: m_Name
       value: roadRampWall (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5181460081777418168, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17313,14 +15885,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17425,14 +15989,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17528,17 +16084,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17666,14 +16214,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadSplitLarger
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 0a5fc6f6f8c434f68a9dbf46d10e5deb, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561690294704494196, guid: 0a5fc6f6f8c434f68a9dbf46d10e5deb, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17777,17 +16317,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (31)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17862,17 +16394,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -157743768167388595, guid: 8191d1f6ac1a34a2bb5c6ba8c141684e, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8191d1f6ac1a34a2bb5c6ba8c141684e, type: 3}
       propertyPath: m_Name
       value: roadStraightBridge
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8191d1f6ac1a34a2bb5c6ba8c141684e, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17923,7 +16447,7 @@ GameObject:
   - component: {fileID: 1522978592}
   - component: {fileID: 1522978594}
   - component: {fileID: 1522978593}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: lightPostLarge (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18095,17 +16619,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (41)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18210,17 +16726,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18340,14 +16848,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18485,14 +16985,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrierWall
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3340187787267790167, guid: 9a631f8d75fc2427398ff1c4828dff02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18593,17 +17085,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18700,17 +17184,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1638960131491865641, guid: 6af2eff944c444b38889ee1f98c486ae, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6af2eff944c444b38889ee1f98c486ae, type: 3}
       propertyPath: m_Name
       value: roadStraightBridgeStart
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 6af2eff944c444b38889ee1f98c486ae, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18924,14 +17400,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStartPositions
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b4b4bbed2939a4c5e87875481511d93a, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5529389873327477621, guid: b4b4bbed2939a4c5e87875481511d93a, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 5806484944150405503, guid: b4b4bbed2939a4c5e87875481511d93a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.006
@@ -19007,14 +17475,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19123,17 +17583,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (29)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19233,14 +17685,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
       propertyPath: m_Name
       value: roadStraight (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19391,17 +17835,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3914691874080345917, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
       propertyPath: m_Name
       value: roadRampLongCurved (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 62a949ee488e0411392180e3b1c3ac9b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19506,17 +17942,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (45)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19617,10 +18045,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ramp
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 2518721966739370045, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -19644,10 +18068,6 @@ PrefabInstance:
     - target: {fileID: 3044048983456426086, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8714700346447161238, guid: 316acbb322ba54712bf613a80c847c65, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19746,17 +18166,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8187650441305949306, guid: c6e2d2dbebcb143deb63e3247e242b0c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6e2d2dbebcb143deb63e3247e242b0c, type: 3}
       propertyPath: m_Name
       value: roadCornerSmall (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c6e2d2dbebcb143deb63e3247e242b0c, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19783,7 +18195,7 @@ GameObject:
   - component: {fileID: 1717133623}
   - component: {fileID: 1717133622}
   - component: {fileID: 1717133621}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19939,17 +18351,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20022,14 +18426,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8982803833107844496, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20188,14 +18584,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (13)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20242,7 +18630,7 @@ GameObject:
   - component: {fileID: 1771278223}
   - component: {fileID: 1771278225}
   - component: {fileID: 1771278224}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: lightPostLarge (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20379,17 +18767,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8187650441305949306, guid: c6e2d2dbebcb143deb63e3247e242b0c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6e2d2dbebcb143deb63e3247e242b0c, type: 3}
       propertyPath: m_Name
       value: roadCornerSmall
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c6e2d2dbebcb143deb63e3247e242b0c, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20497,7 +18877,7 @@ GameObject:
   - component: {fileID: 1812679395}
   - component: {fileID: 1812679394}
   - component: {fileID: 1812679393}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20604,7 +18984,7 @@ GameObject:
   - component: {fileID: 1819712084}
   - component: {fileID: 1819712086}
   - component: {fileID: 1819712085}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: lightPostLarge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20741,17 +19121,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20852,14 +19224,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraight (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20955,17 +19319,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -389169087298694097, guid: 7908a9877c6b34c0da3415e7a3f4649b, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7908a9877c6b34c0da3415e7a3f4649b, type: 3}
       propertyPath: m_Name
       value: tentLong
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7908a9877c6b34c0da3415e7a3f4649b, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21088,37 +19444,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &1859506248
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1859506249}
-  m_Layer: 0
-  m_Name: FR
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1859506249
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859506248}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.15, y: 0, z: 1.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1950166801}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1862120896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21179,17 +19504,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21208,7 +19525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1862226581}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Misc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21292,37 +19609,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &1892337141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1892337142}
-  m_Layer: 0
-  m_Name: BL
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1892337142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892337141}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.94, y: 0, z: -1.99}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1950166801}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896040252 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
@@ -21415,17 +19701,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1638960131491865641, guid: 6af2eff944c444b38889ee1f98c486ae, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6af2eff944c444b38889ee1f98c486ae, type: 3}
       propertyPath: m_Name
       value: roadStraightBridgeStart (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 6af2eff944c444b38889ee1f98c486ae, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21549,17 +19827,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21632,14 +19902,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
       propertyPath: m_Name
       value: roadCornerLarge (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21763,17 +20025,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21849,7 +20103,7 @@ GameObject:
   - component: {fileID: 1923544581}
   - component: {fileID: 1923544580}
   - component: {fileID: 1923544579}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22067,17 +20321,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (34)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22182,17 +20428,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22325,14 +20563,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: rail
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3105817304276991423, guid: 381fe70194b7b475087747b3aa9b464c, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22400,41 +20630,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &1950166800
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1950166801}
-  m_Layer: 0
-  m_Name: RayPoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1950166801
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950166800}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 830293841}
-  - {fileID: 1859506249}
-  - {fileID: 1892337142}
-  - {fileID: 257514389}
-  m_Father: {fileID: 198870466}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1951589093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22499,17 +20694,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.007
       objectReference: {fileID: 0}
-    - target: {fileID: -157743768167388595, guid: 8191d1f6ac1a34a2bb5c6ba8c141684e, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8191d1f6ac1a34a2bb5c6ba8c141684e, type: 3}
       propertyPath: m_Name
       value: roadStraightBridge (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8191d1f6ac1a34a2bb5c6ba8c141684e, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22606,17 +20793,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4018172734392093955, guid: 6bf356b0a428d4f11b4edd410c0cb5a2, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bf356b0a428d4f11b4edd410c0cb5a2, type: 3}
       propertyPath: m_Name
       value: roadRampLong (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 6bf356b0a428d4f11b4edd410c0cb5a2, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22721,17 +20900,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (27)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22841,17 +21012,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (32)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22956,17 +21119,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (40)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23090,17 +21245,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 550502399016123467, guid: 351d6b5685b2b438db422a94ca7fde30, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 351d6b5685b2b438db422a94ca7fde30, type: 3}
       propertyPath: m_Name
       value: roadSplitRound
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 351d6b5685b2b438db422a94ca7fde30, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23259,17 +21406,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23366,17 +21505,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23449,7 +21580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2029534558}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23645,17 +21776,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23752,17 +21875,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7293119210707948081, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
       propertyPath: m_Name
       value: roadRampWall (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e9fe1a81d02bf4197af94f6d87476983, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23867,17 +21982,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23974,17 +22081,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -420837809347544627, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
       propertyPath: m_Name
       value: roadCornerLargerBorder
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c11b094e5dc1441c0b59b28c0a2f2fdc, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24033,7 +22132,7 @@ GameObject:
   - component: {fileID: 2101765775}
   - component: {fileID: 2101765774}
   - component: {fileID: 2101765773}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24284,14 +22383,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStartPositions (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b4b4bbed2939a4c5e87875481511d93a, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5529389873327477621, guid: b4b4bbed2939a4c5e87875481511d93a, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 5806484944150405503, guid: b4b4bbed2939a4c5e87875481511d93a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.006
@@ -24391,17 +22482,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8034571638807956502, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
       propertyPath: m_Name
       value: pylon (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb61a5fa324c94ae1b61240bc43467a4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24498,17 +22581,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24578,17 +22653,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1277216889019689277, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
       propertyPath: m_Name
       value: fenceCurved (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 046fefafd2ff14beeb0d6d8d0074c10d, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24666,17 +22733,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
-    - target: {fileID: 645019579150335821, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
       propertyPath: m_Name
       value: roadStraightLong (43)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d27ee290a070f491690ca492a81b85b4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24804,14 +22863,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadStraight (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6934608390722475694, guid: 2247470a091d143ea9dce078ec36f8e6, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24938,14 +22989,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCornerLarge (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6003969891461891444, guid: 75286c2564a69421587c53b754167985, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24985,8 +23028,8 @@ MeshCollider:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 503875727}
   - {fileID: 24296194}
-  - {fileID: 198870466}
