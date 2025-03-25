@@ -1,5 +1,6 @@
 using UnityEditor.ShaderGraph;
 using UnityEngine;
+using System.Collections;
 
 public class CarController : MonoBehaviour
 {
@@ -30,8 +31,9 @@ public class CarController : MonoBehaviour
     [SerializeField] private float steerStrength = 15f;
     [SerializeField] private AnimationCurve turningCurve;
     [SerializeField] private float dragCoefficient = 1f;
+
     
-    
+    private bool isBoosted = false;
     
 
     private Vector3 currentCarLocalVelocity = Vector3.zero;
@@ -147,4 +149,81 @@ public class CarController : MonoBehaviour
             }
         }
     }
+
+
+
+     public void ActivateSpeedBoost(float extraSpeed, float duration)
+    {
+        if (!isBoosted) // Prevent stacking boosts
+        {
+            StartCoroutine(SpeedBoostCoroutine(extraSpeed, duration));
+        }
+    }
+
+      private IEnumerator SpeedBoostCoroutine(float extraSpeed, float duration)
+    {
+        isBoosted = true;
+        acceleration += extraSpeed;
+         Debug.Log("Boost activated! New acceleration: " + acceleration);
+          Debug.Log("Boost ended. Acceleration reset to: " + acceleration);
+
+        yield return new WaitForSeconds(duration);
+
+        acceleration = 25f;
+        isBoosted = false;
+    }
+
+    public void ActivateSpeedDecrease(float speedReduction, float duration)
+{
+    if (!isBoosted) // Prevent stacking speed changes
+    {
+        StartCoroutine(DecreaseSpeedCoroutine(speedReduction, duration));
+    }
+}
+
+private IEnumerator DecreaseSpeedCoroutine(float speedReduction, float duration)
+{
+    isBoosted = true;
+    acceleration -= speedReduction;
+    Debug.Log("Speed decrease activated! New acceleration: " + acceleration);
+
+    yield return new WaitForSeconds(duration);
+
+    acceleration = 25f; // Reset to default acceleration
+    isBoosted = false;
+    Debug.Log("Speed decrease ended. Acceleration reset to: " + acceleration);
+}
+
+
+public void ActivateStarPower(float extraAcceleration, float duration){
+    if(!isBoosted){
+        StartCoroutine(StarPowerCoroutine(extraAcceleration, duration));
+    }
+}
+
+private IEnumerator StarPowerCoroutine(float extraAcceleration, float duration){
+    isBoosted = true;
+    float originalAcceleration = acceleration;
+    acceleration += extraAcceleration; 
+    Debug.Log("Star Power Activated! Speed increased.");
+    Renderer carRenderer = GetComponent<Renderer>();
+    if (carRenderer != null)
+    {
+        carRenderer.material.color = Color.yellow; // Change to star power color
+    }
+    yield return new WaitForSeconds(duration);
+    acceleration = originalAcceleration;
+    isBoosted = false;
+       if (carRenderer != null)
+    {
+        carRenderer.material.color = Color.white;
+    }
+
+    Debug.Log("Star Power ended.");
+
+    
+}
+
+
+
 }
