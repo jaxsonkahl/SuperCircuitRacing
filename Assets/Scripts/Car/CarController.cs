@@ -1,4 +1,3 @@
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class CarController : MonoBehaviour
@@ -30,12 +29,15 @@ public class CarController : MonoBehaviour
     [SerializeField] private float steerStrength = 15f;
     [SerializeField] private AnimationCurve turningCurve;
     [SerializeField] private float dragCoefficient = 1f;
-    
-    
-    
 
     private Vector3 currentCarLocalVelocity = Vector3.zero;
     public float carVelocityRatio = 0;
+
+    // 🚗 AI Control Toggle and Inputs
+    [Header("AI Settings")]
+    public bool useAI = false;
+    public float aiMoveInput = 1f;  // Forward throttle for AI
+    public float aiSteerInput = 0f; // Steering input from AI
 
     private void Start()
     {
@@ -43,14 +45,13 @@ public class CarController : MonoBehaviour
             carRB = GetComponent<Rigidbody>();
     }
 
-
-    // Update is called once per frame
     void Update()
     {
-        GetPlayerInput();
+        GetInput();
     }
 
-    private void FixedUpdate(){
+    private void FixedUpdate()
+    {
         Suspension();
         GroundCheck();
         CalculateCarVelocity();
@@ -59,20 +60,19 @@ public class CarController : MonoBehaviour
 
     #region Car Status Check
 
-    private void GroundCheck(){
+    private void GroundCheck()
+    {
         int tempGroundedWheels = 0;
-        for (int i = 0; i < wheelsIsGrounded.Length; i++){
+        for (int i = 0; i < wheelsIsGrounded.Length; i++)
+        {
             tempGroundedWheels += wheelsIsGrounded[i];
         }
 
-        if (tempGroundedWheels > 1){
-            isGrounded = true;
-        } else {
-            isGrounded = false;
-        }
+        isGrounded = tempGroundedWheels > 1;
     }
 
-    private void CalculateCarVelocity(){
+    private void CalculateCarVelocity()
+    {
         currentCarLocalVelocity = transform.InverseTransformDirection(carRB.linearVelocity);
         carVelocityRatio = currentCarLocalVelocity.z / maxSpeed;
     }
@@ -81,17 +81,28 @@ public class CarController : MonoBehaviour
 
     #region Input Handling
 
-    private void GetPlayerInput(){
-        moveInput = Input.GetAxis("Vertical");
-        steerInput = Input.GetAxis("Horizontal");
+    private void GetInput()
+    {
+        if (useAI)
+        {
+            moveInput = aiMoveInput;
+            steerInput = aiSteerInput;
+        }
+        else
+        {
+            moveInput = Input.GetAxis("Vertical");
+            steerInput = Input.GetAxis("Horizontal");
+        }
     }
 
     #endregion
 
     #region Movement
 
-    private void Movement(){
-        if (isGrounded){
+    private void Movement()
+    {
+        if (isGrounded)
+        {
             Acceleration();
             Deceleration();
             Turn();
@@ -99,34 +110,40 @@ public class CarController : MonoBehaviour
         }
     }
 
-    private void Acceleration(){
+    private void Acceleration()
+    {
         carRB.AddForceAtPosition(acceleration * moveInput * transform.forward, accelerationPoint.position, ForceMode.Acceleration);
     }
 
-    private void Deceleration(){
+    private void Deceleration()
+    {
         carRB.AddForceAtPosition(deceleration * moveInput * -transform.forward, accelerationPoint.position, ForceMode.Acceleration);
     }
 
-    private void Turn() {
+    private void Turn()
+    {
         carRB.AddTorque(steerStrength * steerInput * turningCurve.Evaluate(carVelocityRatio) * Mathf.Sign(carVelocityRatio) * transform.up, ForceMode.Acceleration);
     }
 
-    private void SidewaysDrag(){
+    private void SidewaysDrag()
+    {
         float currentSidewaySpeed = currentCarLocalVelocity.x;
         float dragMagnitude = -currentSidewaySpeed * dragCoefficient;
-        Vector3 dragForce = transform.right* dragMagnitude;
+        Vector3 dragForce = transform.right * dragMagnitude;
         carRB.AddForceAtPosition(dragForce, carRB.worldCenterOfMass, ForceMode.Acceleration);
     }
 
     #endregion
 
-    private void Suspension(){
-        for (int i = 0; i < rayPoints.Length; i++){
+    private void Suspension()
+    {
+        for (int i = 0; i < rayPoints.Length; i++)
+        {
             RaycastHit hit;
             float maxLength = restLength + springTravel;
 
-            if (Physics.Raycast(rayPoints[i].position, -rayPoints[i].up, out hit, maxLength + wheelRadius, drivable)){
-
+            if (Physics.Raycast(rayPoints[i].position, -rayPoints[i].up, out hit, maxLength + wheelRadius, drivable))
+            {
                 wheelsIsGrounded[i] = 1;
 
                 float currentSpringLength = hit.distance - wheelRadius;
@@ -141,7 +158,9 @@ public class CarController : MonoBehaviour
                 carRB.AddForceAtPosition(netForce * rayPoints[i].up, rayPoints[i].position);
 
                 Debug.DrawLine(rayPoints[i].position, hit.point, Color.red);
-            } else {
+            }
+            else
+            {
                 wheelsIsGrounded[i] = 0;
                 Debug.DrawLine(rayPoints[i].position, rayPoints[i].position + (wheelRadius + maxLength) * -rayPoints[i].up, Color.green);
             }
