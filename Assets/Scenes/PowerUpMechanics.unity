@@ -2184,9 +2184,9 @@ MonoBehaviour:
   springTravel: 0.25
   wheelRadius: 0.33
   acceleration: 25
-  maxSpeed: 100
-  deceleration: 10
-  steerStrength: 30
+  maxSpeed: 80
+  deceleration: 15
+  steerStrength: 25
   turningCurve:
     serializedVersion: 2
     m_Curve:
@@ -2200,8 +2200,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.53493893
-      value: 0.9159324
+      time: 0.45524228
+      value: 0.9831016
       inSlope: 0.23549367
       outSlope: 0.23549367
       tangentMode: 0
@@ -2209,8 +2209,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 1
+      time: 0.9371033
+      value: 0.96217346
       inSlope: 0
       outSlope: 0
       tangentMode: 0
