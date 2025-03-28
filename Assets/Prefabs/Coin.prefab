@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4708887476262852723}
+  - component: {fileID: 6183402239383871851}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 6989302927212258450}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6183402239383871851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2720333368619190967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3cd58a325c07d4eb5a61a8257f2c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
 --- !u!1001 &315998766548159937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42,7 +56,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7249769345424107859, guid: e0bfc7479007bc1479a9f7d769c5056e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.09
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249769345424107859, guid: e0bfc7479007bc1479a9f7d769c5056e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -50,7 +64,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7249769345424107859, guid: e0bfc7479007bc1479a9f7d769c5056e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249769345424107859, guid: e0bfc7479007bc1479a9f7d769c5056e, type: 3}
       propertyPath: m_LocalRotation.w
