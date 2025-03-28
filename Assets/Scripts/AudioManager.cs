@@ -1,5 +1,7 @@
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
+
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
@@ -21,7 +23,9 @@ public class AudioManager : MonoBehaviour
 
    private void Start()
     {
-        PlayMusic("Theme");
+        if(SceneManager.GetActiveScene().name == "Menu"){
+            PlayMusic("Menu");
+        }
     }
 
     public void PlayMusic(string name){

@@ -13,8 +13,9 @@ public class StarPower : MonoBehaviour
         if (car != null && other.CompareTag("Player"))
         {
             Debug.Log("Star power-up collected! Activating effects.");
+            AudioManager.instance.PlaySfx("SpeedBoost"); 
             car.ActivateStarPower(speedBoost, duration);
             Destroy(gameObject); // Remove the power-up after activation
         }
     }
-} // ✅ This should be the last closing brace!
+}

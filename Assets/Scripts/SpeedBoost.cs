@@ -13,6 +13,7 @@ public class SpeedBoost : MonoBehaviour
         if (car != null && other.CompareTag("Player"))
         {
             Debug.Log("Activating speed boost on car."); // Debugging log
+            AudioManager.instance.PlaySfx("SpeedBoost"); 
             car.ActivateSpeedBoost(speedIncrease, boostDuration);
             Destroy(gameObject);
         }
