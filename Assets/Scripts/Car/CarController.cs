@@ -32,6 +32,9 @@ public class CarController : MonoBehaviour
     [SerializeField] private AnimationCurve turningCurve;
     [SerializeField] private float dragCoefficient = 2.5f;
 
+
+    [SerializeField] private float airGravityMultiplier = 2.5f;
+
     private bool isBoosted = false;
 
     private Vector3 currentCarLocalVelocity = Vector3.zero;
@@ -57,7 +60,25 @@ public class CarController : MonoBehaviour
 
         // Step 1: Apply angular damping
         float angularDamping = Mathf.Lerp(0.95f, 0.7f, Mathf.Abs(carVelocityRatio));
-        carRB.angularVelocity *= angularDamping;
+        if (isGrounded)
+        {
+            carRB.angularVelocity = Vector3.Lerp(carRB.angularVelocity, Vector3.zero, Time.fixedDeltaTime * 2f);
+        } 
+
+        if (!isGrounded)
+        {
+            Vector3 extraGravity = Physics.gravity * 2f;
+            carRB.AddForce(extraGravity, ForceMode.Acceleration);
+        }
+        // Print current speed to the Unity console
+        PrintCurrentSpeed();
+    }
+
+    // Method to print the current speed
+    private void PrintCurrentSpeed()
+    {
+        float currentSpeed = carRB.linearVelocity.magnitude;
+        Debug.Log("Current Speed: " + currentSpeed + " m/s");
     }
 
     #region Car Status Check
@@ -124,12 +145,33 @@ public class CarController : MonoBehaviour
 
     private void Turn()
     {
+        if (!isGrounded) return;
+
         float steerCurveValue = turningCurve.Evaluate(Mathf.Abs(carVelocityRatio));
         float lowSpeedFactor = Mathf.Clamp01(1f - Mathf.Abs(carVelocityRatio));
-        float boostedSteerStrength = steerStrength + (lowSpeedFactor * 10f);
+        float dynamicSteerStrength = steerStrength + (lowSpeedFactor * 20f); // tighter turn at low speed
 
-        carRB.AddTorque(boostedSteerStrength * steerInput * steerCurveValue * Mathf.Sign(carVelocityRatio) * transform.up, ForceMode.Acceleration);
+        // Apply rotation torque for turning
+        carRB.AddTorque(transform.up * steerInput * dynamicSteerStrength * steerCurveValue, ForceMode.Acceleration);
+
+        // --- Grounded Steering Assist ---
+        if (carRB.linearVelocity.magnitude > 5f)
+        {
+            Vector3 flatVelocity = carRB.linearVelocity;
+            flatVelocity.y = 0;
+            flatVelocity.Normalize();
+
+            Vector3 flatForward = transform.forward;
+            flatForward.y = 0;
+            flatForward.Normalize();
+
+            float angleDifference = Vector3.SignedAngle(flatForward, flatVelocity, Vector3.up);
+            float assistTorque = Mathf.Clamp(angleDifference, -45f, 45f) * 0.15f;
+
+            carRB.AddTorque(transform.up * -assistTorque, ForceMode.Acceleration);
+        }
     }
+
 
     // Step 2: Improved sideways drag
     private void SidewaysDrag()
@@ -141,7 +183,7 @@ public class CarController : MonoBehaviour
         float speedFactor = Mathf.Clamp01(currentCarLocalVelocity.magnitude / maxSpeed);
         dragForce *= Mathf.Lerp(0.5f, 2f, speedFactor);
 
-        carRB.AddForce(dragForce, ForceMode.Acceleration);
+        carRB.AddForce(dragForce * 10f, ForceMode.Acceleration);
     }
 
     #endregion
