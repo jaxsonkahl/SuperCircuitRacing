@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ff497ad4d119846a08331cbd02fa88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedIncrease: 100
+  speedIncrease: 70
   boostDuration: 1
 --- !u!1001 &2135838378472308854
 PrefabInstance:
