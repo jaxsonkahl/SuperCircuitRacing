@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 1788678727619049987}
   - component: {fileID: 7604732502244100963}
   - component: {fileID: 6715197471605654210}
-  - component: {fileID: 8155202988455506982}
+  - component: {fileID: 23165848133611411}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -314,7 +314,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8155202988455506982
+--- !u!114 &23165848133611411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,6 +329,9 @@ MonoBehaviour:
   totalLaps: 3
   lapText: {fileID: 0}
   finishPanel: {fileID: 0}
+  lapSummaryText: {fileID: 0}
+  lapTimePanel: {fileID: 0}
+  lapTimeTemplate: {fileID: 0}
 --- !u!1 &823613172178063766
 GameObject:
   m_ObjectHideFlags: 0
