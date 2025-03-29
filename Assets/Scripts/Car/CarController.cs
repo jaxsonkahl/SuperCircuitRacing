@@ -4,6 +4,7 @@ using System.Collections;
 
 public class CarController : MonoBehaviour
 {
+    [HideInInspector] public bool canMove = false;
     [Header("References")]
     [SerializeField] private Rigidbody carRB;
     [SerializeField] private Transform[] rayPoints;
@@ -50,6 +51,7 @@ public class CarController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canMove) return;
         Suspension();
         GroundCheck();
         CalculateCarVelocity();
