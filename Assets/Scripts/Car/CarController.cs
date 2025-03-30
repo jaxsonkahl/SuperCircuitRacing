@@ -10,6 +10,8 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform[] rayPoints;
     [SerializeField] private LayerMask drivable;
     [SerializeField] private Transform accelerationPoint;
+    [SerializeField] private TrailRenderer[] skidMarks = new TrailRenderer[2];
+    [SerializeField] private ParticleSystem[] skidSmokes = new ParticleSystem[2];
 
     [Header("Suspension Settings")]
     [SerializeField] private float springStiffness;
@@ -17,7 +19,6 @@ public class CarController : MonoBehaviour
     [SerializeField] private float restLength;
     [SerializeField] private float springTravel;
     [SerializeField] private float wheelRadius;
-
     private int[] wheelsIsGrounded = new int[4];
     private bool isGrounded = false;
 
@@ -32,6 +33,9 @@ public class CarController : MonoBehaviour
     [SerializeField] private float steerStrength = 15f;
     [SerializeField] private AnimationCurve turningCurve;
     [SerializeField] private float dragCoefficient = 2.5f;
+
+    [Header("Visuals")]
+    [SerializeField] private float minSideSkidVelocity = 0.01f;
 
 
     [SerializeField] private float airGravityMultiplier = 2.5f;
@@ -59,6 +63,7 @@ public class CarController : MonoBehaviour
         GroundCheck();
         CalculateCarVelocity();
         Movement();
+        Vfx();
 
         // Step 1: Apply angular damping
         float angularDamping = Mathf.Lerp(0.95f, 0.7f, Mathf.Abs(carVelocityRatio));
@@ -301,4 +306,39 @@ public class CarController : MonoBehaviour
     }
 
     #endregion
+
+    #region Visuals
+    private void Vfx(){
+        float sideVel = currentCarLocalVelocity.x;
+        Debug.Log($"isGrounded: {isGrounded}, SideVelocity: {sideVel}");
+
+        if(isGrounded && Mathf.Abs(sideVel) != 0){
+
+            Debug.Log("Calling true");
+            ToggleSkidMarks(true);
+            ToggleSkidSmokes(true);
+        } else {
+            ToggleSkidMarks(false);
+            ToggleSkidSmokes(false);
+        }
+    }
+    private void ToggleSkidMarks(bool toggle){
+        foreach (var skidMark in skidMarks){
+            skidMark.emitting = toggle;
+            skidMark.enabled = toggle;
+        }
+    }
+    private void ToggleSkidSmokes(bool toggle){
+        foreach (var smoke in skidSmokes){
+            if (toggle){
+                smoke.Play();
+            } else {
+                smoke.Stop();
+            }
+            
+        }
+    }
+    #endregion
+
 }
+
