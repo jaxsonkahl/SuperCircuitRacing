@@ -7,8 +7,27 @@ public class SpeedBoost : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Try to get the CarController component from the colliding object
+        Debug.Log($"Collision detected with: {other.gameObject.name}"); // Log the colliding object's name
+
         CarController car = other.gameObject.GetComponent<CarController>();
+
+        if (car != null)
+        {
+            Debug.Log("CarController component found."); // Log if CarController is found
+        }
+        else
+        {
+            Debug.Log("CarController component not found."); // Log if CarController is missing
+        }
+
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Colliding object is tagged as Player."); // Log if the tag matches
+        }
+        else
+        {
+            Debug.Log("Colliding object is not tagged as Player."); // Log if the tag doesn't match
+        }
 
         if (car != null && other.CompareTag("Player"))
         {
