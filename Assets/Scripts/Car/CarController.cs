@@ -308,20 +308,26 @@ public class CarController : MonoBehaviour
     #endregion
 
     #region Visuals
-    private void Vfx(){
-        float sideVel = currentCarLocalVelocity.x;
-        Debug.Log($"isGrounded: {isGrounded}, SideVelocity: {sideVel}");
+    private void Vfx() {
+        float speed = carRB.linearVelocity.magnitude;
+        float turnAmount = Mathf.Abs(steerInput);
+        float sideVel = Mathf.Abs(currentCarLocalVelocity.x); // side slip
 
-        if(isGrounded && Mathf.Abs(sideVel) != 0){
+        // Customizable thresholds
+        float minSpeed = 10f;
+        float minTurn = .7f;     // how sharp the turn must be
+        float minSideSkid = 0.5f; // how much side slide to count as drifting
 
-            Debug.Log("Calling true");
-            ToggleSkidMarks(true);
-            ToggleSkidSmokes(true);
-        } else {
-            ToggleSkidMarks(false);
-            ToggleSkidSmokes(false);
-        }
+        // Only show effects if all conditions are met
+        bool shouldSkid = isGrounded && speed > minSpeed && turnAmount > minTurn && sideVel > minSideSkid;
+
+        Debug.Log($"Skid Check → Speed: {speed}, Turn: {turnAmount}, SideVel: {sideVel}, Skid? {shouldSkid}");
+
+        ToggleSkidMarks(shouldSkid);
+        ToggleSkidSmokes(shouldSkid);
     }
+
+
     private void ToggleSkidMarks(bool toggle){
         foreach (var skidMark in skidMarks){
             skidMark.emitting = toggle;
@@ -329,13 +335,13 @@ public class CarController : MonoBehaviour
         }
     }
     private void ToggleSkidSmokes(bool toggle){
-        foreach (var smoke in skidSmokes){
-            if (toggle){
+    foreach (var smoke in skidSmokes){
+        Debug.Log($"Toggling smoke: {smoke.name}, toggle = {toggle}");
+        if (toggle){
                 smoke.Play();
             } else {
                 smoke.Stop();
             }
-            
         }
     }
     #endregion
