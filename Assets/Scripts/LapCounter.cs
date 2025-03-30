@@ -9,6 +9,7 @@ public class LapCounter : MonoBehaviour
     private bool raceFinished = false;
     private bool canTrigger = true; // Prevent multiple triggers
     private float triggerCooldown = 1f; // Cooldown time to prevent multiple triggers
+    private int crossingCount = 0; // Track the number of crossings
 
     private float lapStartTime; // Start time of the current lap
     private List<float> lapTimes = new List<float>(); // Stores all lap times
@@ -21,41 +22,68 @@ public class LapCounter : MonoBehaviour
     public GameObject lapTimePanel; // Panel to store lap time texts
     public TMP_Text lapTimeTemplate; // Template for lap times
 
+    private bool raceStarted = false; // Ensure the race starts after countdown
+
     void Start()
     {
         UpdateLapUI(); // Show initial lap info
         finishPanel.SetActive(false); // Hide finish panel at start
-        StartNewLap(); // Start the first lap timer
+
+        // Delay the start of the race after 3.48 seconds
+        Invoke("StartRace", 3.48f);
     }
 
     void Update()
     {
-        if (!raceFinished)
+        if (raceStarted && !raceFinished)
         {
             UpdateCurrentLapTimer(); // Update the lap timer in real-time
         }
     }
 
+    // Starts the race and timer after the 3.48-second delay
+    void StartRace()
+    {
+        raceStarted = true;
+        StartNewLap(); // Start lap timer after 3.48s delay
+        Debug.Log("Race Started! Timer Active.");
+    }
+
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("FinishLine") && !raceFinished && canTrigger)
+        if (other.CompareTag("FinishLine") && raceStarted && !raceFinished && canTrigger)
         {
             canTrigger = false; // Prevent multiple triggers
-            RecordLapTime(); // Save current lap time
-            currentLap++;
+            crossingCount++; // Count the crossings
 
-            // Stop at 3/3 correctly and prevent going to 4/3
-            if (currentLap >= totalLaps)
+            // Skip the first crossing to ignore the initial pass by the finish line
+            if (crossingCount == 1)
             {
-                FinishRace(); // Show results if race is done
-                currentLap = totalLaps; // Lock lap counter at 3/3
-                UpdateLapUI(); // Final update to lock lap counter
+                Debug.Log("Initial crossing ignored.");
+                Invoke("ResetTrigger", triggerCooldown);
                 return;
             }
 
-            // Update lap text and start a new lap
-            UpdateLapUI();
-            StartNewLap(); // Start the next lap timer
+            // Count the first valid lap after the second crossing
+            if (crossingCount > 1 && crossingCount <= totalLaps + 1)
+            {
+                RecordLapTime(); // Save current lap time
+                currentLap++;
+
+                // Stop at 3/3 correctly and prevent going beyond
+                if (currentLap >= totalLaps)
+                {
+                    FinishRace(); // Show results if race is done
+                    currentLap = totalLaps; // Lock lap counter at 3/3
+                    UpdateLapUI(); // Final update to lock lap counter
+                    return;
+                }
+
+                // Update lap text and start a new lap
+                UpdateLapUI();
+                StartNewLap(); // Start the next lap timer
+            }
+
             Invoke("ResetTrigger", triggerCooldown);
         }
     }
@@ -70,7 +98,8 @@ public class LapCounter : MonoBehaviour
         if (!raceFinished)
         {
             // Lap counter starts from 1 and ends at 3/3
-            lapText.text = "Lap: " + (currentLap + 1) + "/" + totalLaps;
+            int displayLap = Mathf.Clamp(currentLap + 1, 1, totalLaps);
+            lapText.text = "Lap: " + displayLap + "/" + totalLaps;
         }
     }
 
@@ -95,7 +124,7 @@ public class LapCounter : MonoBehaviour
         TMP_Text newLapTime = Instantiate(lapTimeTemplate, lapTimePanel.transform);
         newLapTime.gameObject.SetActive(true);
 
-        // Show lap time starting from Lap 1
+        // Show lap time starting from Lap 1 to Lap 3
         newLapTime.text = "Lap " + lapTimes.Count + ": " + FormatTime(lapTime);
     }
 
