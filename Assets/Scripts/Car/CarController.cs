@@ -21,6 +21,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private float wheelRadius;
     private int[] wheelsIsGrounded = new int[4];
     private bool isGrounded = false;
+    private string currentSurfaceTag = "Default";
 
     [Header("Input")]
     private float moveInput = 0;
@@ -137,17 +138,50 @@ public class CarController : MonoBehaviour
                 localVel.x = Mathf.Lerp(localVel.x, 0, Time.fixedDeltaTime * 5f);
                 carRB.linearVelocity = transform.TransformDirection(localVel);
             }
+
+            if (currentSurfaceTag == "Grass")
+            {
+                Vector3 horizontalVelocity = new Vector3(carRB.linearVelocity.x, 0f, carRB.linearVelocity.z);
+
+                // Reduce speed by 0–10% based on how fast the car is moving
+                float slowFactor = Mathf.Lerp(1f, 0.97f, Mathf.Clamp01(carRB.linearVelocity.magnitude / maxSpeed));
+                Vector3 reducedVelocity = horizontalVelocity * slowFactor;
+
+                carRB.linearVelocity = new Vector3(reducedVelocity.x, carRB.linearVelocity.y, reducedVelocity.z);
+            }
         }
     }
 
     private void Acceleration()
     {
-        carRB.AddForceAtPosition(acceleration * moveInput * transform.forward, accelerationPoint.position, ForceMode.Acceleration);
+        if (moveInput <= 0) return;
+
+        float adjustedAccel = acceleration;
+
+        if (currentSurfaceTag == "Grass")
+        {
+            float minGrassAccel = 5f;
+            adjustedAccel = Mathf.Max(acceleration * 0.3f, minGrassAccel);
+        }
+
+        float speedFactor = Mathf.Clamp01(1f - (carRB.linearVelocity.magnitude / maxSpeed));
+        float finalAccel = adjustedAccel * speedFactor;
+
+        carRB.AddForceAtPosition(finalAccel * moveInput * transform.forward, accelerationPoint.position, ForceMode.Acceleration);
     }
 
     private void Deceleration()
     {
-        carRB.AddForceAtPosition(deceleration * moveInput * -transform.forward, accelerationPoint.position, ForceMode.Acceleration);
+        if (moveInput >= 0) return; // Only decelerate when pressing backward
+
+        float adjustedDecel = deceleration;
+
+        if (currentSurfaceTag == "Grass")
+        {
+            adjustedDecel *= 0.4f;
+        }
+
+        carRB.AddForceAtPosition(adjustedDecel * Mathf.Abs(moveInput) * -transform.forward, accelerationPoint.position, ForceMode.Acceleration);
     }
 
     private void Turn()
@@ -197,6 +231,7 @@ public class CarController : MonoBehaviour
 
     private void Suspension()
     {
+        currentSurfaceTag = "Default";
         for (int i = 0; i < rayPoints.Length; i++)
         {
             RaycastHit hit;
@@ -204,6 +239,14 @@ public class CarController : MonoBehaviour
 
             if (Physics.Raycast(rayPoints[i].position, -rayPoints[i].up, out hit, maxLength + wheelRadius, drivable))
             {
+                Debug.Log("Ray hit: " + hit.collider.name + " with tag: " + hit.collider.tag);
+                if (hit.collider.CompareTag("Grass"))
+                {
+                    currentSurfaceTag = "Grass";
+                }
+                else {
+                    currentSurfaceTag = "Default";
+                }
                 wheelsIsGrounded[i] = 1;
 
                 float currentSpringLength = hit.distance - wheelRadius;
@@ -345,6 +388,5 @@ public class CarController : MonoBehaviour
         }
     }
     #endregion
-
 }
 
