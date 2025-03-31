@@ -11,8 +11,21 @@ public class MainMenu : MonoBehaviour
     
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 }
-  public void quitGame(){
-    
-    Application.Quit();
-  }
+  public void quitGame()
+{
+    Debug.Log("Quit button pressed."); // Debug log to check if it's being called
+
+    #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in Unity Editor
+    #else
+        Application.Quit(); // Works in a built game
+    #endif
+}
+
+public void Controls(){
+    SceneManager.LoadScene("Controls"); // Load the controls scene
+}
+public void Menu(){
+    SceneManager.LoadScene("Menu");
+}
 }
