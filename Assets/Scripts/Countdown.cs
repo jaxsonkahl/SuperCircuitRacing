@@ -19,13 +19,16 @@ public class Countdown : MonoBehaviour
         while (countdownTime > 0)
         {
             countdownDisplay.text = countdownTime.ToString();
+            AudioManager.instance.PlaySfx("Count");
             StartCoroutine(AnimateText());  // Play scale animation
             yield return new WaitForSeconds(1f);
             countdownTime--;
         }
 
         countdownDisplay.text = "GO!";
+        AudioManager.instance.PlaySfx("Go");
         StartCoroutine(AnimateText());  // Animate "GO!" too
+        AudioManager.instance?.PlayMusic("Race Song");
         car.canMove = true;
         yield return new WaitForSeconds(1f);
         countdownDisplay.gameObject.SetActive(false);

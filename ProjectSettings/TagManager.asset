@@ -8,6 +8,7 @@ TagManager:
   - TriggerCollider
   - Coin
   - Grass
+  - Obstacle
   layers:
   - Default
   - TransparentFX

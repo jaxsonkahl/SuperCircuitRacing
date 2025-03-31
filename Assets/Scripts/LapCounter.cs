@@ -158,6 +158,7 @@ public class LapCounter : MonoBehaviour
         newLapTime.gameObject.SetActive(true);
 
         // Show lap time starting from Lap 1 to Lap 3
+         AudioManager.instance.PlaySfx("Lap");
         newLapTime.text = "Lap " + lapTimes.Count + ": " + FormatTime(lapTime);
     }
 

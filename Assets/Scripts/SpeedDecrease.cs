@@ -15,7 +15,7 @@ public class SpeedDecrease : MonoBehaviour
         if (car != null && other.CompareTag("Player"))
         {
             Debug.Log("Activating speed decrease on car."); // Debugging log
-            AudioManager.instance.PlaySfx("SpeedDecrease"); // Play sound effect
+            AudioManager.instance.PlaySfx("SpeedDecrease" , 5f); // Play sound effect
             car.ActivateSpeedDecrease(speedDecrease, decreaseDuration);
             if (!collectedDecreases.Contains(gameObject)) {
                 collectedDecreases.Add(gameObject);
