@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class LapCounter : MonoBehaviour
@@ -21,6 +22,9 @@ public class LapCounter : MonoBehaviour
     public TMP_Text lapSummaryText; // TextMeshPro to show lap times on finish
     public GameObject lapTimePanel; // Panel to store lap time texts
     public TMP_Text lapTimeTemplate; // Template for lap times
+
+    public GameObject restartButton; // Button to restart game
+    public GameObject exitButton; // Button to exit game
 
     private bool raceStarted = false; // Ensure the race starts after countdown
 
@@ -133,6 +137,8 @@ public class LapCounter : MonoBehaviour
         raceFinished = true;
         finishPanel.SetActive(true); // Show the finish panel
         ShowLapSummary(); // Display all lap times and highlight the best lap
+        EnableButtons(); // Show restart and exit buttons
+        Time.timeScale = 0; // Pause the game after race ends
     }
 
     void ShowLapSummary()
@@ -152,12 +158,48 @@ public class LapCounter : MonoBehaviour
                 bestLapIndex = i;
             }
 
+            // Highlight best lap with bold and color (optional)
+            if (i == bestLapIndex)
+            {
+                lapTimeText = $"<b><color=#FFD700>{lapTimeText}</color></b>"; // Highlight best lap
+            }
+
             summaryText += lapTimeText + "\n";
         }
 
-        // Highlight best lap
-        summaryText += "\nBest Lap: Lap " + (bestLapIndex + 1) + " - " + FormatTime(bestTime);
+        // Add Best Lap separately for extra emphasis (optional)
+        summaryText += "\nBest Lap: <b><color=#FFD700>Lap " + (bestLapIndex + 1) + " - " + FormatTime(bestTime) + "</color></b>";
         lapSummaryText.text = summaryText;
+    }
+
+    void EnableButtons()
+    {
+        if (restartButton != null)
+        {
+            restartButton.SetActive(true);
+        }
+
+        if (exitButton != null)
+        {
+            exitButton.SetActive(true);
+        }
+    }
+
+    // Restart Game - Reload Current Scene
+    public void RestartGame()
+    {
+        Time.timeScale = 1; // Resume game time before reloading
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // Exit Game - Quit Application
+    public void ExitGame()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in Editor
+        #else
+        Application.Quit(); // Quit the game in a built version
+        #endif
     }
 
     string FormatTime(float time)
