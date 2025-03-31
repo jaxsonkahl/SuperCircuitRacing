@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a270cd484ac8e4cb292741d27bb9eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedDecrease: 40
+  speedDecrease: 12
   decreaseDuration: 2
 --- !u!114 &6738782739514747285
 MonoBehaviour:
