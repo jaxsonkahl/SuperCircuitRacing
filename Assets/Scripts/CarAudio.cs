@@ -33,5 +33,6 @@ public class CarAudio : MonoBehaviour
         if(currentSpeed > maxSpeed){
             carAudio.pitch = maxPitch;
         }
+         carAudio.volume = Mathf.Lerp(0.4f, 0.8f, currentSpeed / maxSpeed);
    }
 }

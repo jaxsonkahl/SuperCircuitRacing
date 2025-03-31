@@ -25,7 +25,9 @@ public class AudioManager : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name == "Menu"){
             PlayMusic("Menu");
+            MusicSource.loop = true;
         }
+       
     }
 
     public void PlayMusic(string name){
@@ -35,11 +37,14 @@ public class AudioManager : MonoBehaviour
         }else{
             MusicSource.clip = s.clip;
             MusicSource.Play();
+            MusicSource.loop = true;
+            MusicSource.volume = 60f;
             Debug.Log("Playing music: " + name);
+            
         }
     }
 
-    public void PlaySfx(string name){
+    public void PlaySfx(string name , float volume = 1f){
         Sound s = Array.Find(sfx, x => x.name == name);
         if(s == null){
             Debug.LogWarning("Sound: " + name + " not found!");
