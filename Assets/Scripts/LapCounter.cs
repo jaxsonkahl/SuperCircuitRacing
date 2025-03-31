@@ -45,6 +45,12 @@ public class LapCounter : MonoBehaviour
         }
     }
 
+    // when player collects coin take off one second
+    public void SubtractTimeFromLap(float seconds) {
+        lapStartTime += seconds; 
+        Debug.Log($"Time reduced by {seconds} seconds!");
+    }
+
     // Starts the race and timer after the 3.48-second delay
     void StartRace()
     {
@@ -107,9 +113,32 @@ public class LapCounter : MonoBehaviour
         }
     }
 
-    void StartNewLap()
-    {
+    void StartNewLap() {
         lapStartTime = Time.time; // Record lap start time
+
+        foreach (var coin in CoinCollection.collectedCoins) {
+        if (coin != null)
+            coin.SetActive(true);
+        }
+        CoinCollection.collectedCoins.Clear();
+
+        foreach (var boost in SpeedBoost.collectedBoosts) {
+        if (boost != null)
+            boost.SetActive(true);
+        }
+        SpeedBoost.collectedBoosts.Clear();
+
+        foreach (var decrease in SpeedDecrease.collectedDecreases) {
+        if (decrease != null)
+            decrease.SetActive(true);
+        }
+        SpeedDecrease.collectedDecreases.Clear();
+
+        foreach (var star in StarPower.collectedStars){
+        if (star != null)
+            star.SetActive(true);
+        }
+        StarPower.collectedStars.Clear();
     }
 
     void UpdateCurrentLapTimer()
@@ -208,4 +237,5 @@ public class LapCounter : MonoBehaviour
         float seconds = time % 60;
         return string.Format("{0:00}:{1:00.00}", minutes, seconds);
     }
+
 }
