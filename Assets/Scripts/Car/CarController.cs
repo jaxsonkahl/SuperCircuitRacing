@@ -36,10 +36,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private float dragCoefficient = 2.5f;
 
     [Header("Visuals")]
-    [SerializeField] private float minSideSkidVelocity = 0.01f;
 
-
-    [SerializeField] private float airGravityMultiplier = 2.5f;
 
     private bool isBoosted = false;
 

@@ -11,12 +11,14 @@ public class CoinCollection : MonoBehaviour
     [SerializeField] private TMP_Text messageText;
     [SerializeField] private GameObject messageGroupObj;
 
+
     public static List<GameObject> collectedCoins = new List<GameObject>();
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coin") && other.gameObject.activeSelf)
         {
+            AudioManager.instance.PlaySfx("CollectCoin");
             Coin++;
             if (!collectedCoins.Contains(other.gameObject)) {
                 collectedCoins.Add(other.gameObject);
@@ -24,6 +26,7 @@ public class CoinCollection : MonoBehaviour
             }
 
             other.gameObject.SetActive(false);
+            FindFirstObjectByType<LapCounter>().SubtractTimeFromLap(1f);
 
             if (messageText != null && messageGroupObj != null)
             {
