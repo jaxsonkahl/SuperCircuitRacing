@@ -36,7 +36,6 @@ public class PauseMenu : MonoBehaviour
     Debug.Log("Resume() called"); // Add this
     if (pauseMenuUI == null)
     {
-<<<<<<< Updated upstream
         Debug.LogError("pauseMenuUI is not assigned!");
     }
 
@@ -45,13 +44,6 @@ public class PauseMenu : MonoBehaviour
     isPaused = false;
 }
 
-=======
-        Debug.Log("Resume button clicked!");
-        pauseMenuUI.SetActive(false); // Hide pause menu
-        Time.timeScale = 1f; // Resume game time
-        isPaused = false; // Update pause state
-    }
->>>>>>> Stashed changes
 
     public void Pause()
     {

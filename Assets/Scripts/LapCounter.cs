@@ -45,6 +45,12 @@ public class LapCounter : MonoBehaviour
         }
     }
 
+    // when player collects coin take off one second
+    public void SubtractTimeFromLap(float seconds) {
+        lapStartTime += seconds; 
+        Debug.Log($"Time reduced by {seconds} seconds!");
+    }
+
     // Starts the race and timer after the 3.48-second delay
     void StartRace()
     {
@@ -107,9 +113,32 @@ public class LapCounter : MonoBehaviour
         }
     }
 
-    void StartNewLap()
-    {
+    void StartNewLap() {
         lapStartTime = Time.time; // Record lap start time
+
+        foreach (var coin in CoinCollection.collectedCoins) {
+        if (coin != null)
+            coin.SetActive(true);
+        }
+        CoinCollection.collectedCoins.Clear();
+
+        foreach (var boost in SpeedBoost.collectedBoosts) {
+        if (boost != null)
+            boost.SetActive(true);
+        }
+        SpeedBoost.collectedBoosts.Clear();
+
+        foreach (var decrease in SpeedDecrease.collectedDecreases) {
+        if (decrease != null)
+            decrease.SetActive(true);
+        }
+        SpeedDecrease.collectedDecreases.Clear();
+
+        foreach (var star in StarPower.collectedStars){
+        if (star != null)
+            star.SetActive(true);
+        }
+        StarPower.collectedStars.Clear();
     }
 
     void UpdateCurrentLapTimer()
@@ -129,6 +158,7 @@ public class LapCounter : MonoBehaviour
         newLapTime.gameObject.SetActive(true);
 
         // Show lap time starting from Lap 1 to Lap 3
+         AudioManager.instance.PlaySfx("Lap");
         newLapTime.text = "Lap " + lapTimes.Count + ": " + FormatTime(lapTime);
     }
 
@@ -139,18 +169,40 @@ public class LapCounter : MonoBehaviour
         ShowLapSummary(); // Display all lap times and highlight the best lap
         EnableButtons(); // Show restart and exit buttons
         Time.timeScale = 0; // Pause the game after race ends
+    }
 
-        // ✅ Disable pause menu after race is complete
-        PauseMenu.raceFinished = true;
-        GameObject pauseMenuObject = GameObject.FindGameObjectWithTag("PauseMenu");
-        if (pauseMenuObject != null)
+
+    void EnableButtons()
+    {
+        if (restartButton != null)
         {
-            PauseMenu pauseMenu = pauseMenuObject.GetComponent<PauseMenu>();
-            if (pauseMenu != null)
-            {
-                pauseMenu.DisablePause(); // Disable pause after race
-            }
+            restartButton.SetActive(true);
         }
+
+        if (exitButton != null)
+        {
+            exitButton.SetActive(true);
+        }
+    }
+
+    // Restart Game - Reload Current Scene
+    public void RestartGame()
+    {
+        Time.timeScale = 1; // Resume game time before reloading
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // Exit Game - Quit Application
+    public void ExitGame()
+    {
+        SceneManager.LoadScene("Menu"); // Load the menu scene
+    }
+
+    string FormatTime(float time)
+    {
+        int minutes = Mathf.FloorToInt(time / 60);
+        float seconds = time % 60;
+        return string.Format("{0:00}:{1:00.00}", minutes, seconds);
     }
 
     void ShowLapSummary()
@@ -188,40 +240,4 @@ public class LapCounter : MonoBehaviour
         lapSummaryText.text = summaryText;
     }
 
-    void EnableButtons()
-    {
-        if (restartButton != null)
-        {
-            restartButton.SetActive(true);
-        }
-
-        if (exitButton != null)
-        {
-            exitButton.SetActive(true);
-        }
-    }
-
-    // Restart Game - Reload Current Scene
-    public void RestartGame()
-    {
-        Time.timeScale = 1; // Resume game time before reloading
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    // Exit Game - Quit Application
-    public void ExitGame()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in Editor
-#else
-        Application.Quit(); // Quit the game in a built version
-#endif
-    }
-
-    string FormatTime(float time)
-    {
-        int minutes = Mathf.FloorToInt(time / 60);
-        float seconds = time % 60;
-        return string.Format("{0:00}:{1:00.00}", minutes, seconds);
-    }
 }
