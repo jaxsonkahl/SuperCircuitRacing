@@ -22,11 +22,18 @@ public class PauseMenu : MonoBehaviour
     }
     
     public void Resume()
+{
+    Debug.Log("Resume() called"); // Add this
+    if (pauseMenuUI == null)
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        isPaused = false;
-    } 
+        Debug.LogError("pauseMenuUI is not assigned!");
+    }
+
+    pauseMenuUI.SetActive(false);
+    Time.timeScale = 1f;
+    isPaused = false;
+}
+
 
     public void Pause()
     {
