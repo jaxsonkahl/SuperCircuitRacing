@@ -23,9 +23,9 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Menu.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/Controls.unity
-  - m_enabled: 1
     m_path: Assets/Scenes/FinalizedAudio.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/Controls.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []

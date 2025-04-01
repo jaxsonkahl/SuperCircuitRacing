@@ -30,19 +30,22 @@ public class AudioManager : MonoBehaviour
        
     }
 
-    public void PlayMusic(string name){
-        Sound s = Array.Find(music, x => x.name == name);
-        if(s == null){
-            Debug.LogWarning("Sound: " + name + " not found!");
-        }else{
-            MusicSource.clip = s.clip;
-            MusicSource.Play();
-            MusicSource.loop = true;
-            MusicSource.volume = 60f;
-            Debug.Log("Playing music: " + name);
-            
-        }
+   public void PlayMusic(string name, float volume = 0.3f) // Default volume to 50%
+{
+    Sound s = Array.Find(music, x => x.name == name);
+    if (s == null)
+    {
+        Debug.LogWarning("Sound: " + name + " not found!");
     }
+    else
+    {
+        MusicSource.clip = s.clip;
+        MusicSource.volume = volume; // Set the volume here
+        MusicSource.Play();
+        MusicSource.loop = true;
+        Debug.Log("Playing music: " + name + " at volume: " + volume);
+    }
+}
 
     public void PlaySfx(string name , float volume = 1f){
         Sound s = Array.Find(sfx, x => x.name == name);
