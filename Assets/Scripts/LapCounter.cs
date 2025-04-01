@@ -45,12 +45,6 @@ public class LapCounter : MonoBehaviour
         }
     }
 
-    // when player collects coin take off one second
-    public void SubtractTimeFromLap(float seconds) {
-        lapStartTime += seconds; 
-        Debug.Log($"Time reduced by {seconds} seconds!");
-    }
-
     // Starts the race and timer after the 3.48-second delay
     void StartRace()
     {
@@ -113,32 +107,9 @@ public class LapCounter : MonoBehaviour
         }
     }
 
-    void StartNewLap() {
+    void StartNewLap()
+    {
         lapStartTime = Time.time; // Record lap start time
-
-        foreach (var coin in CoinCollection.collectedCoins) {
-        if (coin != null)
-            coin.SetActive(true);
-        }
-        CoinCollection.collectedCoins.Clear();
-
-        foreach (var boost in SpeedBoost.collectedBoosts) {
-        if (boost != null)
-            boost.SetActive(true);
-        }
-        SpeedBoost.collectedBoosts.Clear();
-
-        foreach (var decrease in SpeedDecrease.collectedDecreases) {
-        if (decrease != null)
-            decrease.SetActive(true);
-        }
-        SpeedDecrease.collectedDecreases.Clear();
-
-        foreach (var star in StarPower.collectedStars){
-        if (star != null)
-            star.SetActive(true);
-        }
-        StarPower.collectedStars.Clear();
     }
 
     void UpdateCurrentLapTimer()
@@ -158,7 +129,6 @@ public class LapCounter : MonoBehaviour
         newLapTime.gameObject.SetActive(true);
 
         // Show lap time starting from Lap 1 to Lap 3
-         AudioManager.instance.PlaySfx("Lap");
         newLapTime.text = "Lap " + lapTimes.Count + ": " + FormatTime(lapTime);
     }
 
@@ -169,6 +139,18 @@ public class LapCounter : MonoBehaviour
         ShowLapSummary(); // Display all lap times and highlight the best lap
         EnableButtons(); // Show restart and exit buttons
         Time.timeScale = 0; // Pause the game after race ends
+
+        // ✅ Disable pause menu after race is complete
+        PauseMenu.raceFinished = true;
+        GameObject pauseMenuObject = GameObject.FindGameObjectWithTag("PauseMenu");
+        if (pauseMenuObject != null)
+        {
+            PauseMenu pauseMenu = pauseMenuObject.GetComponent<PauseMenu>();
+            if (pauseMenu != null)
+            {
+                pauseMenu.DisablePause(); // Disable pause after race
+            }
+        }
     }
 
     void ShowLapSummary()
@@ -177,18 +159,22 @@ public class LapCounter : MonoBehaviour
         float bestTime = float.MaxValue;
         int bestLapIndex = 0;
 
+        // Find the best lap
+        for (int i = 0; i < lapTimes.Count; i++)
+        {
+            if (lapTimes[i] < bestTime)
+            {
+                bestTime = lapTimes[i];
+                bestLapIndex = i; // Store the best lap index
+            }
+        }
+
+        // Display all lap times without highlighting initially
         for (int i = 0; i < lapTimes.Count; i++)
         {
             string lapTimeText = "Lap " + (i + 1) + ": " + FormatTime(lapTimes[i]);
 
-            // Check for best lap
-            if (lapTimes[i] < bestTime)
-            {
-                bestTime = lapTimes[i];
-                bestLapIndex = i;
-            }
-
-            // Highlight best lap with bold and color (optional)
+            // Highlight only the best lap
             if (i == bestLapIndex)
             {
                 lapTimeText = $"<b><color=#FFD700>{lapTimeText}</color></b>"; // Highlight best lap
@@ -225,11 +211,11 @@ public class LapCounter : MonoBehaviour
     // Exit Game - Quit Application
     public void ExitGame()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in Editor
-        #else
+#else
         Application.Quit(); // Quit the game in a built version
-        #endif
+#endif
     }
 
     string FormatTime(float time)
@@ -238,5 +224,4 @@ public class LapCounter : MonoBehaviour
         float seconds = time % 60;
         return string.Format("{0:00}:{1:00.00}", minutes, seconds);
     }
-
 }
